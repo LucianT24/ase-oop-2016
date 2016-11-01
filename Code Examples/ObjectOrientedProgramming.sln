@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Clase - Atribute si met
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Clase - Atribute constante", "08. Clase - Atribute constante", "{A5A3AD1C-D06A-4D49-8365-4EC8B9C6D8AD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constrcutor, Destructor", "StudentClass - Constrcutor, Destructor\StudentClass - Constrcutor, Destructor.vcxproj", "{E2A422EF-A77E-4FDF-8619-90DD65C4A22E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constructor, Destructor", "StudentClass - Constructor, Destructor\StudentClass - Constructor, Destructor.vcxproj", "{E2A422EF-A77E-4FDF-8619-90DD65C4A22E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentCLass - Metode de acces", "StudentCLass - Metode de acces\StudentCLass - Metode de acces.vcxproj", "{B65F811D-899E-44B9-9AF5-C819508978BA}"
 EndProject
