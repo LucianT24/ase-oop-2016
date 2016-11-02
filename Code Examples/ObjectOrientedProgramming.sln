@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Clase - Constructor cu 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Clase - Atribute si metode statice", "06. Clase - Atribute si metode statice", "{515C5DC6-1DBF-41E8-84EF-F661594ADBF8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Clase - Atribute constante", "08. Clase - Atribute constante", "{A5A3AD1C-D06A-4D49-8365-4EC8B9C6D8AD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Clase - Atribute constante", "07. Clase - Atribute constante", "{A5A3AD1C-D06A-4D49-8365-4EC8B9C6D8AD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constructor, Destructor", "StudentClass - Constructor, Destructor\StudentClass - Constructor, Destructor.vcxproj", "{E2A422EF-A77E-4FDF-8619-90DD65C4A22E}"
 EndProject
@@ -34,6 +34,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constructor cu parametrii", "StudentClass - Constructor cu parametrii\StudentClass - Constructor cu parametrii.vcxproj", "{B4C0388B-9D7A-403E-9755-1DABDC684FDC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Atribute si metode statice", "StudentClass - Atribute si metode statice\StudentClass - Atribute si metode statice.vcxproj", "{FFA9320D-0415-4C34-B666-495C055C6601}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Atribute constante", "StudentClass - Atribute constante\StudentClass - Atribute constante.vcxproj", "{D0DB2722-C000-40BD-927D-3EEB8BE95A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,14 @@ Global
 		{FFA9320D-0415-4C34-B666-495C055C6601}.Release|x64.Build.0 = Release|x64
 		{FFA9320D-0415-4C34-B666-495C055C6601}.Release|x86.ActiveCfg = Release|Win32
 		{FFA9320D-0415-4C34-B666-495C055C6601}.Release|x86.Build.0 = Release|Win32
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Debug|x64.ActiveCfg = Debug|x64
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Debug|x64.Build.0 = Debug|x64
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Debug|x86.Build.0 = Debug|Win32
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Release|x64.ActiveCfg = Release|x64
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Release|x64.Build.0 = Release|x64
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Release|x86.ActiveCfg = Release|Win32
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,5 +139,6 @@ Global
 		{B65F811D-899E-44B9-9AF5-C819508978BA} = {C1704FED-F2B6-485C-BCEA-8EADF1482248}
 		{B4C0388B-9D7A-403E-9755-1DABDC684FDC} = {FF87B087-3DEF-4898-970B-9B3FC7C1B117}
 		{FFA9320D-0415-4C34-B666-495C055C6601} = {515C5DC6-1DBF-41E8-84EF-F661594ADBF8}
+		{D0DB2722-C000-40BD-927D-3EEB8BE95A70} = {A5A3AD1C-D06A-4D49-8365-4EC8B9C6D8AD}
 	EndGlobalSection
 EndGlobal
