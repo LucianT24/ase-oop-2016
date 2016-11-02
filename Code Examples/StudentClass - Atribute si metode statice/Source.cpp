@@ -4,7 +4,6 @@ using namespace std;
 class Student
 {
 private:
-	const int id;
 	int varsta;
 	char* nume;
 	int nrNote;
@@ -12,7 +11,7 @@ private:
 	static int nrStudenti;
 public:
 	//constructor fara parametrii
-	Student() :id(nrStudenti)
+	Student()
 	{
 		nume = NULL;
 		varsta = 0;
@@ -22,7 +21,7 @@ public:
 		nrStudenti++;
 	}
 	Student(char* nume, int varsta, int nrNote, int*note)
-		:varsta(varsta), nrNote(nrNote), id(nrStudenti)
+		:varsta(varsta), nrNote(nrNote)
 	{
 		//this->varsta = varsta;
 		//this->nrNote = nrNote;
