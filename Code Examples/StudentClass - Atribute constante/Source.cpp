@@ -4,7 +4,9 @@ using namespace std;
 class Student
 {
 private:
+	//atribut constant
 	const int id;
+
 	int varsta;
 	char* nume;
 	int nrNote;

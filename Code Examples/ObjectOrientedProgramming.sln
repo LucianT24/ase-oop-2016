@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Pointer, Reference", "01 Pointer, Reference", "{F775C4D6-1712-48C3-9055-264A84428C36}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Pointer, Reference", "01. Pointer, Reference", "{F775C4D6-1712-48C3-9055-264A84428C36}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Structuri", "02. Structuri", "{69D56206-6A04-4E1E-BDF0-3A1DEF3C34BC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MethodParametersValuePointerReference", "MethodParametersValuePointerReference\MethodParametersValuePointerReference.vcxproj", "{B2EC5BD9-ED1A-4989-848E-BC627ADCA9EF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MethodParameters", "MethodParametersValuePointerReference\MethodParametersValuePointerReference.vcxproj", "{B2EC5BD9-ED1A-4989-848E-BC627ADCA9EF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorStructMethodPointer", "StructurePointer\StructurePointer.vcxproj", "{D97CFA47-912F-4951-8A70-BA995E92871A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorStructExternalMethod", "StructExternalMethod\StructExternalMethod.vcxproj", "{8525EB1E-4CD0-49A0-8FF4-547318676756}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vector", "Vector\Vector.vcxproj", "{EF73E9ED-9D6D-4EB7-9072-CA9C1E337AEF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Vector\Vector.vcxproj", "{EF73E9ED-9D6D-4EB7-9072-CA9C1E337AEF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentStruct", "StudentStruct\StudentStruct.vcxproj", "{D55A88AE-DC9A-43CA-841A-EE3090B0DBFD}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Atribute constante", "StudentClass - Atribute constante\StudentClass - Atribute constante.vcxproj", "{D0DB2722-C000-40BD-927D-3EEB8BE95A70}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Clase - Basics", "03. Clase - Basics", "{B8BF540C-515D-418E-B867-AE4E6CA428DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Clase - Operators", "04. Clase - Operators", "{2A8718E6-6470-4C72-89A6-AAA876FD52F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
