@@ -4,29 +4,22 @@ using namespace std;
 class Student
 {
 private:
-	//atribut constant
-	const int id;
-
 	int varsta;
 	char* nume;
 	int nrNote;
 	int *note;
-	static int nrStudenti;
 public:
 #pragma region Constructori, Destructor
 	//constructor fara parametrii
 	Student()
-		:id(nrStudenti)
 	{
 		nume = NULL;
 		varsta = 0;
 		nrNote = 0;
 		note = NULL;
-		//incrementare valoare variabila statica
-		nrStudenti++;
 	}
 	Student(char* nume, int varsta, int nrNote, int*note)
-		:varsta(varsta), nrNote(nrNote), id(nrStudenti)
+		:varsta(varsta), nrNote(nrNote)
 	{
 		//this->varsta = varsta;
 		//this->nrNote = nrNote;
@@ -39,8 +32,6 @@ public:
 		this->note = new int[nrNote];
 		for (int i = 0; i < nrNote; i++)
 			this->note[i] = note[i];
-		//incrementare valoare variabila statica
-		nrStudenti += 1;
 	}
 	//destructor
 	~Student()
@@ -101,16 +92,8 @@ public:
 		for (int i = 0; i < nrNote; i++)
 			this->note[i] = note[i];
 	}
-
-	//Get nrStudenti
-	static int GetNrStudenti()
-	{
-		return nrStudenti;
-	}
 #pragma endregion 
 };
-
-int Student::nrStudenti = 0;
 
 ostream & operator<<(ostream & consola, const Student & st)
 {

@@ -47,6 +47,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unary Operators", "Unary Op
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputOutput Operators", "InputOutput Operators", "{DDA819C3-1154-4F92-8316-3EFBA1B3289B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Clase - Inheritance", "05. Clase - Inheritance", "{28DC455B-AFFF-494A-941D-C3468BD09F38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
