@@ -73,15 +73,15 @@ public:
 	}
 
 	//Get/Set Note & NrNote
-	int GetNrNote()
+	int getNrNote()
 	{
 		return nrNote;
 	}
-	int* GetNote()
+	int* getNote()
 	{
 		return note;
 	}
-	void SetNote(int nrNote, int*note)
+	void setNote(int nrNote, int*note)
 	{
 		if (this->note != NULL)
 			delete[] this->note;
