@@ -4,14 +4,19 @@ using namespace std;
 class Student
 {
 private:
+	//atribut constant
+	const int id;
+
 	int varsta;
 	char* nume;
 	int nrNote;
 	int *note;
 	static int nrStudenti;
 public:
+#pragma region Constructori, Destructor
 	//constructor fara parametrii
 	Student()
+		:id(nrStudenti)
 	{
 		nume = NULL;
 		varsta = 0;
@@ -21,7 +26,7 @@ public:
 		nrStudenti++;
 	}
 	Student(char* nume, int varsta, int nrNote, int*note)
-		:varsta(varsta), nrNote(nrNote)
+		:varsta(varsta), nrNote(nrNote), id(nrStudenti)
 	{
 		//this->varsta = varsta;
 		//this->nrNote = nrNote;
@@ -47,9 +52,11 @@ public:
 		if (note != NULL)
 			delete[] note;
 	}
+#pragma endregion 
 
+#pragma region Metode acces
 	//Get/Set Varsta
-	int getVarsta()
+	int getVarsta() const
 	{
 		return varsta;
 	}
@@ -62,7 +69,7 @@ public:
 	}
 
 	//Get/Set Nume
-	char* getNume() {
+	char* getNume() const {
 		return nume;
 	}
 	void setNume(char* numeNou) {
@@ -78,11 +85,11 @@ public:
 	}
 
 	//Get/Set Note & NrNote
-	int getNrNote()
+	int getNrNote() const
 	{
 		return nrNote;
 	}
-	int* getNote()
+	int* getNote () const
 	{
 		return note;
 	}
@@ -100,12 +107,80 @@ public:
 	{
 		return nrStudenti;
 	}
+#pragma endregion 
 };
 
 int Student::nrStudenti = 0;
+
+ostream & operator<<(ostream & consola, const Student & st)
+{
+	consola << endl << "Nume: ";
+	if (st.getNume() != NULL)
+		consola << st.getNume();
+	consola << endl << "Varsta: " << st.getVarsta();
+	consola << endl << "Note: ";
+	for (int i = 0; i < st.getNrNote(); i++)
+		consola << " " << st.getNote()[i];
+
+	return consola;
+}
+
+istream & operator >> (istream & consola, Student & st)
+{
+#pragma region Nume
+	cout << endl << "Nume: ";
+	char buffer[200];
+	consola >> buffer;
+
+	/*if (st.nume != NULL)
+		delete[] st.nume;
+	st.nume = new char[strlen(buffer) + 1];
+	strcpy(st.nume, buffer);*/
+	st.setNume(buffer);
+#pragma endregion
+
+#pragma region Varsta
+	cout << "Varsta: ";
+	//cin >> st.varsta;
+	int varsta;
+	cin >> varsta;
+	st.setVarsta(varsta);
+#pragma endregion
+
+#pragma region Note
+	cout << "NrNote: ";
+	/*
+	cin >> st.nrNote;
+	if (st.note != NULL)
+		delete[] st.note;
+	st.note = new int[st.nrNote];
+	for (int i = 0; i < st.nrNote; i++)
+	{
+		cout << "nota[" << i << "]: ";
+		cin >> st.note[i];
+	}*/
+	
+	int nrNote;
+	cin >> nrNote;
+	int *note = new int[nrNote];
+	for (int i = 0; i < nrNote; i++)
+	{
+		cout << "nota[" << i << "]: ";
+		cin >> note[i];
+	}
+	st.setNote(nrNote, note);
+
+#pragma endregion
+
+	return consola;
+}
+
 void main()
 {
 	int marks[] = { 10,9 };
 	Student s("Nume", 21, 2, marks);
-	cout << Student::GetNrStudenti();
+	cout << s;
+	cin >> s;
+	cout << s;
 }
+

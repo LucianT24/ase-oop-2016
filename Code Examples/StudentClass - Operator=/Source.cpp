@@ -13,9 +13,10 @@ private:
 	int *note;
 	static int nrStudenti;
 public:
-	#pragma region Constructori, Destructor
+#pragma region Constructori, Destructor
 	//constructor fara parametrii
-	Student() :id(nrStudenti)
+	Student()
+		:id(nrStudenti)
 	{
 		nume = NULL;
 		varsta = 0;
@@ -51,9 +52,9 @@ public:
 		if (note != NULL)
 			delete[] note;
 	}
-	#pragma endregion 
+#pragma endregion 
 
-	#pragma region Metode acces
+#pragma region Metode acces
 	//Get/Set Varsta
 	int getVarsta()
 	{
@@ -84,15 +85,15 @@ public:
 	}
 
 	//Get/Set Note & NrNote
-	int GetNrNote()
+	int getNrNote()
 	{
 		return nrNote;
 	}
-	int* GetNote()
+	int* getNote()
 	{
 		return note;
 	}
-	void SetNote(int nrNote, int*note)
+	void setNote(int nrNote, int*note)
 	{
 		if (this->note != NULL)
 			delete[] this->note;
@@ -106,14 +107,77 @@ public:
 	{
 		return nrStudenti;
 	}
-	#pragma endregion 
+#pragma endregion 
 
-	#pragma region Operatori
+#pragma region Operatori
+	Student & operator=(const Student & source)
+	{
+		cout << "Operator =" << endl;
+
+		//1.
+		this->varsta = source.varsta;
+		this->nrNote = source.nrNote;
+
+		//2. copiere atribute *
+
+		//Nume
+		//a) stergere spatiu existent
+		if (this->nume != NULL)
+			delete[] this->nume;
+
+		if (source.nume == NULL)
+			this->nume = NULL;
+		else
+		{
+			//b) alocare spatiu
+			this->nume = new char[strlen(source.nume) + 1];
+			//c) copiere
+			strcpy(this->nume, source.nume);
+		}
+
+		//Note
+		//a) stergere spatiu existent
+		if (this->note != NULL)
+			delete[] this->note;
+
+		if (source.note == NULL)
+			this->note = NULL;
+		else
+		{
+			//b) alocare spatiu
+			this->note = new int[this->nrNote];
+			//c) copiere
+			for (int i = 0; i < this->nrNote; i++)
+				this->note[i] = source.note[i];
+		}
+
+		return  *this;
+	}
+
+	friend ostream& operator<<(ostream& consola, const Student &st);
+	friend istream& operator>>(istream& consola, const Student &st);
 	
+	Student operator+(int nota)
+	{
+		Student copie = *this;
+
+		return copie;
+	}
 	#pragma endregion
 };
 
 int Student::nrStudenti = 0;
+
+ostream & operator<<(ostream & consola, const Student & st)
+{
+	return consola;
+}
+
+istream & operator >> (istream & consola, const Student & st)
+{
+	return consola;
+}
+
 
 void OMetodaSimpla(Student st)
 {
@@ -135,3 +199,4 @@ void main()
 	s2 = s; //apeleaza operator=
 	//s2.operator=(s); //echivalent cu s2 = s;
 }
+

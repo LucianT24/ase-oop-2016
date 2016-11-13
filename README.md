@@ -1,1 +1,6 @@
 # Object Oriented Programming
+
+##FAQ
+1) Can the examples contain any mistakes?
+---------------------------------------------------
+A: Sure.. if you disover any, please create a [Pull Request](https://help.github.com/articles/about-pull-requests/).

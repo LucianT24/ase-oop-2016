@@ -4,14 +4,19 @@ using namespace std;
 class Student
 {
 private:
+	//atribut constant
+	const int id;
+
 	int varsta;
 	char* nume;
 	int nrNote;
 	int *note;
 	static int nrStudenti;
 public:
+#pragma region Constructori, Destructor
 	//constructor fara parametrii
 	Student()
+		:id(nrStudenti)
 	{
 		nume = NULL;
 		varsta = 0;
@@ -21,7 +26,7 @@ public:
 		nrStudenti++;
 	}
 	Student(char* nume, int varsta, int nrNote, int*note)
-		:varsta(varsta), nrNote(nrNote)
+		:varsta(varsta), nrNote(nrNote), id(nrStudenti)
 	{
 		//this->varsta = varsta;
 		//this->nrNote = nrNote;
@@ -47,7 +52,9 @@ public:
 		if (note != NULL)
 			delete[] note;
 	}
+#pragma endregion 
 
+#pragma region Metode acces
 	//Get/Set Varsta
 	int getVarsta()
 	{
@@ -100,12 +107,70 @@ public:
 	{
 		return nrStudenti;
 	}
+#pragma endregion 
+
+#pragma region Operatori
+	friend ostream& operator<<(ostream& consola, const Student &st);
+	friend istream& operator >> (istream& consola, Student &st);
+#pragma endregion
 };
 
 int Student::nrStudenti = 0;
+
+ostream & operator<<(ostream & consola, const Student & st)
+{
+	consola << endl << "Nume: ";
+	if(st.nume != NULL)
+		consola<< st.nume;
+	consola << endl << "Varsta: " << st.varsta ;
+	consola << endl << "Note: ";
+	for (int i = 0; i < st.nrNote; i++)
+		consola << " " << st.note[i];
+
+	return consola;
+}
+
+istream & operator >> (istream & consola, Student & st)
+{
+	#pragma region Nume
+	cout << endl << "Nume: ";
+	char buffer[200];
+	consola >> buffer;
+	
+	if (st.nume != NULL)
+		delete[] st.nume;
+	st.nume = new char[strlen(buffer) + 1];
+	strcpy(st.nume, buffer);
+	#pragma endregion
+
+	#pragma region Varsta
+	cout << "Varsta: ";
+	cin >> st.varsta;
+	#pragma endregion
+
+	#pragma region Note
+	cout << "NrNote: ";
+	cin >> st.nrNote;
+
+	if (st.note != NULL)
+		delete [] st.note;
+	st.note = new int[st.nrNote];
+	for (int i = 0; i < st.nrNote; i++)
+	{
+		cout << "nota[" << i << "]: ";
+		cin >> st.note[i];
+	}
+	#pragma endregion
+
+	return consola;
+}
+
 void main()
 {
 	int marks[] = { 10,9 };
 	Student s("Nume", 21, 2, marks);
-	cout << Student::GetNrStudenti();
+	cout << s;
+	cin >> s;
+	cout << s;
 }
+
