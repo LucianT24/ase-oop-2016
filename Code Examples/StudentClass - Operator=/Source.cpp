@@ -56,7 +56,7 @@ public:
 
 #pragma region Metode acces
 	//Get/Set Varsta
-	int getVarsta()
+	int getVarsta() const
 	{
 		return varsta;
 	}
@@ -69,7 +69,7 @@ public:
 	}
 
 	//Get/Set Nume
-	char* getNume() {
+	char* getNume() const {
 		return nume;
 	}
 	void setNume(char* numeNou) {
@@ -85,11 +85,11 @@ public:
 	}
 
 	//Get/Set Note & NrNote
-	int getNrNote()
+	int getNrNote() const
 	{
 		return nrNote;
 	}
-	int* getNote()
+	int* getNote() const
 	{
 		return note;
 	}
@@ -153,16 +153,6 @@ public:
 
 		return  *this;
 	}
-
-	friend ostream& operator<<(ostream& consola, const Student &st);
-	friend istream& operator>>(istream& consola, const Student &st);
-	
-	Student operator+(int nota)
-	{
-		Student copie = *this;
-
-		return copie;
-	}
 	#pragma endregion
 };
 
@@ -170,14 +160,66 @@ int Student::nrStudenti = 0;
 
 ostream & operator<<(ostream & consola, const Student & st)
 {
+	consola << endl << "Nume: ";
+	if (st.getNume() != NULL)
+		consola << st.getNume();
+	consola << endl << "Varsta: " << st.getVarsta();
+	consola << endl << "Note: ";
+	for (int i = 0; i < st.getNrNote(); i++)
+		consola << " " << st.getNote()[i];
+
 	return consola;
 }
 
-istream & operator >> (istream & consola, const Student & st)
+istream & operator >> (istream & consola, Student & st)
 {
+#pragma region Nume
+	cout << endl << "Nume: ";
+	char buffer[200];
+	consola >> buffer;
+
+	/*if (st.nume != NULL)
+	delete[] st.nume;
+	st.nume = new char[strlen(buffer) + 1];
+	strcpy(st.nume, buffer);*/
+	st.setNume(buffer);
+#pragma endregion
+
+#pragma region Varsta
+	cout << "Varsta: ";
+	//cin >> st.varsta;
+	int varsta;
+	cin >> varsta;
+	st.setVarsta(varsta);
+#pragma endregion
+
+#pragma region Note
+	cout << "NrNote: ";
+	/*
+	cin >> st.nrNote;
+	if (st.note != NULL)
+	delete[] st.note;
+	st.note = new int[st.nrNote];
+	for (int i = 0; i < st.nrNote; i++)
+	{
+	cout << "nota[" << i << "]: ";
+	cin >> st.note[i];
+	}*/
+
+	int nrNote;
+	cin >> nrNote;
+	int *note = new int[nrNote];
+	for (int i = 0; i < nrNote; i++)
+	{
+		cout << "nota[" << i << "]: ";
+		cin >> note[i];
+	}
+	st.setNote(nrNote, note);
+
+#pragma endregion
+
 	return consola;
 }
-
 
 void OMetodaSimpla(Student st)
 {

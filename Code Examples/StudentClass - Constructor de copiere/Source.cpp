@@ -8,16 +8,15 @@ private:
 	int nrNote;
 	int* note;
 public:
+	//constructor implicit
 	Student() 
 	{
 		nume = NULL;
 		varsta = 0;
 		nrNote = 0;
 		note = NULL;
-		//incrementare valoare variabila statica
-		
 	}
-
+	//constructor cu parametrii
 	Student(char* nume, int varsta)
 	{
 		this->nume = new char[strlen(nume) + 1];
@@ -28,6 +27,35 @@ public:
 		this->nrNote = 0;
 		this->note = NULL;
 	}
+	//constructor copiere
+	Student(const Student & source)
+	{
+		//copiere nume
+		if (source.nume == NULL)
+			this->nume = NULL;
+		else
+		{
+			this->nume = new char[strlen(source.nume) + 1];
+			strcpy(this->nume, source.nume);
+		}
+
+		//copiere varsta
+		this->varsta = source.varsta;
+
+		//copiere nrNote
+		this->nrNote = source.nrNote;
+
+		//copiere note
+		if (source.note == NULL)
+			this->note = NULL;
+		else
+		{
+			this->note = new int[this->nrNote];
+			for (int i = 0; i < this->nrNote; i++)
+				this->note[i] = source.note[i];
+		}
+	}
+	//destructor
 	~Student()
 	{
 		if (this->nume != NULL)
@@ -35,33 +63,6 @@ public:
 		if (this->note != NULL)
 			delete[] this->note;
 	}
-
-	//operator=
-	/*void operator=(const Student &st)
-	{
-		cout << "Operator =" << endl;
-
-		this->varsta = st.varsta;
-		this->nrNote = st.nrNote;
-
-		//copiere nume
-
-
-		//1. stergere
-		if (this->nume != NULL)
-			delete[] this->nume;
-
-		if (st.nume == NULL)
-			this->nume = NULL;
-		else
-		{
-			//2. alocare spatiu
-			int lungimeNumeNou = strlen(st.nume) + 1;
-			this->nume = new char[lungimeNumeNou];
-			//3. copierea
-			strcpy(this->nume, st.nume);
-		}
-	}*/
 };
 
 void main()
