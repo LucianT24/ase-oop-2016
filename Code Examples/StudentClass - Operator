@@ -1,9 +1,9 @@
 ﻿  Source.cpp
-d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(83): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(74): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
-d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(135): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+d:\projects\ase.objectorientedprogramming\code examples\studentclass - operator=\source.cpp(120): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
   StudentClass - Operator=.vcxproj -> D:\Projects\ASE.ObjectOrientedProgramming\Code Examples\Debug\StudentClass - Operator=.exe
   StudentClass - Operator=.vcxproj -> D:\Projects\ASE.ObjectOrientedProgramming\Code Examples\Debug\StudentClass - Operator=.pdb (Full PDB)

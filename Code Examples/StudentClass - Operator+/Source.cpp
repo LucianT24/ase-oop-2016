@@ -124,30 +124,8 @@ public:
 #pragma endregion 
 
 #pragma region Operatori
-	Student operator+(int nota)
-	{
-		Student temp = *this; //constructor copiere
-
-		//alocare spatiu
-		int* noteActualizat = new int[temp.nrNote + 1];
-		//copiere note existente
-		for (int i = 0; i < temp.nrNote; i++)
-			noteActualizat[i] = temp.note[i];
-		//adaugare nota noua
-		noteActualizat[temp.nrNote] = nota;
-
-		//actualizare numar note
-		temp.nrNote = temp.nrNote + 1;
-
-		//stergere vector vechi
-		if (temp.note != NULL)
-			delete[] temp.note;
-
-		temp.note = noteActualizat;
-
-		return temp;
-	}
-
+#pragma region Operator atribuire
+	//supraincarcare operator=
 	Student & operator=(const Student & source)
 	{
 		cout << "Operator =" << endl;
@@ -192,11 +170,104 @@ public:
 		return  *this;
 	}
 #pragma endregion
+
+#pragma region Operatori binari aritmetici (Primul operand este de tip Student)
+	//+, -, *, /, +=, -=
+	//supraincarcare operator+ pentru adaugarea unei note la vectorul de note
+	//NU modifica datele obiectului referit prin this
+	Student operator+(int nota) const
+	{
+		Student temp = *this; //constructor copiere
+
+		//alocare spatiu
+		int* noteActualizat = new int[temp.nrNote + 1];
+		//copiere note existente
+		for (int i = 0; i < temp.nrNote; i++)
+			noteActualizat[i] = temp.note[i];
+		//adaugare nota noua
+		noteActualizat[temp.nrNote] = nota;
+
+		//actualizare numar note
+		temp.nrNote = temp.nrNote + 1;
+
+		//stergere vector vechi
+		if (temp.note != NULL)
+			delete[] temp.note;
+
+		temp.note = noteActualizat;
+
+		return temp;
+	}
+
+	//supraincarcare operator- pentru scaderea unui numar de ani din varsta
+	//NU modifica datele obiectului referit prin this
+	Student operator-(int ani) const 
+	{
+		Student temp = *this; //constructor copiere
+		
+		//actualizare varsta
+		temp.varsta -= ani;
+
+		return temp;
+	}
+
+	//supraincarcare operator* pentru multiplicarea varstei cu o valoare
+	//NU modifica datele obiectului referit prin this
+	Student operator*(int valoare) const 
+	{
+		Student temp = *this; //constructor copiere
+
+		//actualizare varsta
+		temp.varsta *= valoare;
+
+		return temp;
+	}
+
+	//supraincarcare operator/ pentru impartirea varstei cu o valoare
+	//NU modifica datele obiectului referit prin this
+	Student operator/(int valoare) const 
+	{
+		Student temp = *this; //constructor copiere
+
+		//actualizare varsta
+		temp.varsta /= valoare;
+
+		return temp;
+	}
+
+	//supraincarcare operator-= pentru scaderea unui numar de ani din varsta
+	//modifica datele obiectului referit prin this
+	Student& operator-=(int valoare)
+	{
+		this->varsta -= valoare;
+		return *this;
+	}
+
+	//supraincarcare operator+= pentru adaugarea unui numar de ani la varsta
+	//modifica datele obiectului referit prin this
+	Student& operator+=(int valoare)
+	{
+		this->varsta += valoare;
+		return *this;
+	}
+#pragma endregion
+
+#pragma endregion
 };
 
+#pragma region Operatori binari aritmetici (Primul operand NU este de tip Student)
+//adunare intreg cu varsta unui student
+int operator+(int varsta, const Student& other)
+{
+	return varsta + other.getVarsta();
+}
+//Tema: implementati supraincarcarea operatorilor >, <. >= , = 
+#pragma endregion
+
+#pragma region Operatori InputOutput
 ostream & operator<<(ostream & consola, const Student & st)
 {
-	consola << endl << "Nume: ";
+	consola << "Nume: ";
 	if (st.getNume() != NULL)
 		consola << st.getNume();
 	consola << endl << "Varsta: " << st.getVarsta();
@@ -204,7 +275,7 @@ ostream & operator<<(ostream & consola, const Student & st)
 	for (int i = 0; i < st.getNrNote(); i++)
 		consola << " " << st.getNote()[i];
 
-	return consola;
+	return consola<<endl;
 }
 
 istream & operator >> (istream & consola, Student & st)
@@ -256,13 +327,25 @@ istream & operator >> (istream & consola, Student & st)
 
 	return consola;
 }
+#pragma endregion
 
 void main()
 {
 	int marks[] = { 10,9 };
 	Student s("Nume", 21, 2, marks);
-	s = s + 10;
-	s = s + 9;
+	s = s + 10; //adaugare nota 10
 	cout << s;
+	s = s + 9; // adaugare nota 9
+	cout << s;
+	s = s - 1; // scadem 1 din varsta persoanei
+	cout << s;
+	cout << endl << endl << "Inmultire varsta cu 2"<<endl;
+	s = s * 2; // inmultire varsta cu 2
+	cout << s;
+	cout << endl << endl <<"Impartire varsta cu 2" << endl;
+	s = s / 2; // impartire varsta cu 2
+	cout << s;
+	cout << endl << endl << "Adunare intreg cu varsta" << endl;
+	cout << 2 + s<<endl;
 }
 
