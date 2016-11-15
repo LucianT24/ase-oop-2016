@@ -29,25 +29,39 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Atribute con
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Clase - Basics", "03. Clase - Basics", "{B8BF540C-515D-418E-B867-AE4E6CA428DA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Clase - Operator Overloading", "04. Clase - Operator Overloading", "{2A8718E6-6470-4C72-89A6-AAA876FD52F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Clase - Supraincarcare Operatori", "04. Clase - Supraincarcare Operatori", "{2A8718E6-6470-4C72-89A6-AAA876FD52F7}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator=", "StudentClass - Operator=\StudentClass - Operator=.vcxproj", "{03A2C209-9343-4FAE-916A-443806940DD1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constructor de copiere", "StudentClass - Constructor de copiere\StudentClass - Constructor de copiere.vcxproj", "{425F0913-8B8E-4A51-A692-7E8565806CF7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator+", "StudentClass - Operator+\StudentClass - Operator+.vcxproj", "{CA660A1F-CEC8-4755-8F03-CDCD77076C44}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori binari aritmetici", "StudentClass - Operator+\StudentClass - Operator+.vcxproj", "{CA660A1F-CEC8-4755-8F03-CDCD77076C44}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - InputOutput Operators (Friend)", "StudentClass - InputOutput Operators (Friend Methods)\StudentClass - InputOutput Operators (Friend Methods).vcxproj", "{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori InputOutput (Friend)", "StudentClass - InputOutput Operators (Friend Methods)\StudentClass - InputOutput Operators (Friend Methods).vcxproj", "{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - InputOutput Operators (Metode de acces)", "StudentClass - InputOutput Operators (Metode de acces)\StudentClass - InputOutput Operators (Metode de acces).vcxproj", "{7B50ADF4-FB78-408F-B0D8-5FB741210B9B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori InputOutput (Metode de acces)", "StudentClass - InputOutput Operators (Metode de acces)\StudentClass - InputOutput Operators (Metode de acces).vcxproj", "{7B50ADF4-FB78-408F-B0D8-5FB741210B9B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator!", "StudentClass - Operrator!\StudentClass - Operrator!.vcxproj", "{0587B7B1-3410-4B66-94FE-6BC669AD467A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori unari", "StudentClass - Unary Operators\StudentClass - Unary Operators.vcxproj", "{0587B7B1-3410-4B66-94FE-6BC669AD467A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unary Operators", "Unary Operators", "{C7131E91-05E6-45FD-9144-8280F765D19B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori unari", "Operatori unari", "{C7131E91-05E6-45FD-9144-8280F765D19B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputOutput Operators", "InputOutput Operators", "{DDA819C3-1154-4F92-8316-3EFBA1B3289B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori InputOutput", "Operatori InputOutput", "{DDA819C3-1154-4F92-8316-3EFBA1B3289B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Clase - Inheritance", "05. Clase - Inheritance", "{28DC455B-AFFF-494A-941D-C3468BD09F38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori binari", "Operatori binari", "{083F75B0-0DB3-4B3B-B775-725A6B47FE3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operator atribuire", "Operator atribuire", "{F880F94B-0C2A-41E4-8F49-E594355EFFDD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori binari comparatie", "StudentClass - Operatori binari comparatie\StudentClass - Operatori binari comparatie.vcxproj", "{1C0247AD-22BC-4653-AFBB-EC99625E79E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operator []", "Operator []", "{F6829C4D-E28B-4B61-B176-6FAC0D547ADC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operator ()", "Operator ()", "{9877C4C9-826F-4DD0-A91B-C318007E1BCC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator[]", "StudentClass - Operator[]\StudentClass - Operator[].vcxproj", "{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator()", "StudentClass - Operator()\StudentClass - Operator().vcxproj", "{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +199,30 @@ Global
 		{0587B7B1-3410-4B66-94FE-6BC669AD467A}.Release|x64.Build.0 = Release|x64
 		{0587B7B1-3410-4B66-94FE-6BC669AD467A}.Release|x86.ActiveCfg = Release|Win32
 		{0587B7B1-3410-4B66-94FE-6BC669AD467A}.Release|x86.Build.0 = Release|Win32
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Debug|x64.ActiveCfg = Debug|x64
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Debug|x64.Build.0 = Debug|x64
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Debug|x86.Build.0 = Debug|Win32
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Release|x64.ActiveCfg = Release|x64
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Release|x64.Build.0 = Release|x64
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Release|x86.ActiveCfg = Release|Win32
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5}.Release|x86.Build.0 = Release|Win32
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Debug|x64.ActiveCfg = Debug|x64
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Debug|x64.Build.0 = Debug|x64
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Debug|x86.ActiveCfg = Debug|Win32
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Debug|x86.Build.0 = Debug|Win32
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Release|x64.ActiveCfg = Release|x64
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Release|x64.Build.0 = Release|x64
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Release|x86.ActiveCfg = Release|Win32
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB}.Release|x86.Build.0 = Release|Win32
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Debug|x64.ActiveCfg = Debug|x64
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Debug|x64.Build.0 = Debug|x64
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Debug|x86.Build.0 = Debug|Win32
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Release|x64.ActiveCfg = Release|x64
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Release|x64.Build.0 = Release|x64
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Release|x86.ActiveCfg = Release|Win32
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,13 +238,20 @@ Global
 		{B4C0388B-9D7A-403E-9755-1DABDC684FDC} = {B8BF540C-515D-418E-B867-AE4E6CA428DA}
 		{FFA9320D-0415-4C34-B666-495C055C6601} = {B8BF540C-515D-418E-B867-AE4E6CA428DA}
 		{D0DB2722-C000-40BD-927D-3EEB8BE95A70} = {B8BF540C-515D-418E-B867-AE4E6CA428DA}
-		{03A2C209-9343-4FAE-916A-443806940DD1} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{03A2C209-9343-4FAE-916A-443806940DD1} = {F880F94B-0C2A-41E4-8F49-E594355EFFDD}
 		{425F0913-8B8E-4A51-A692-7E8565806CF7} = {B8BF540C-515D-418E-B867-AE4E6CA428DA}
-		{CA660A1F-CEC8-4755-8F03-CDCD77076C44} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{CA660A1F-CEC8-4755-8F03-CDCD77076C44} = {083F75B0-0DB3-4B3B-B775-725A6B47FE3D}
 		{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891} = {DDA819C3-1154-4F92-8316-3EFBA1B3289B}
 		{7B50ADF4-FB78-408F-B0D8-5FB741210B9B} = {DDA819C3-1154-4F92-8316-3EFBA1B3289B}
 		{0587B7B1-3410-4B66-94FE-6BC669AD467A} = {C7131E91-05E6-45FD-9144-8280F765D19B}
 		{C7131E91-05E6-45FD-9144-8280F765D19B} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
 		{DDA819C3-1154-4F92-8316-3EFBA1B3289B} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{083F75B0-0DB3-4B3B-B775-725A6B47FE3D} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{F880F94B-0C2A-41E4-8F49-E594355EFFDD} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{1C0247AD-22BC-4653-AFBB-EC99625E79E5} = {083F75B0-0DB3-4B3B-B775-725A6B47FE3D}
+		{F6829C4D-E28B-4B61-B176-6FAC0D547ADC} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{9877C4C9-826F-4DD0-A91B-C318007E1BCC} = {2A8718E6-6470-4C72-89A6-AAA876FD52F7}
+		{7EEF01A9-4B6A-457F-9D24-0B9BF107E1CB} = {F6829C4D-E28B-4B61-B176-6FAC0D547ADC}
+		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88} = {9877C4C9-826F-4DD0-A91B-C318007E1BCC}
 	EndGlobalSection
 EndGlobal
