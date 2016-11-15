@@ -35,7 +35,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operator=", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Constructor de copiere", "StudentClass - Constructor de copiere\StudentClass - Constructor de copiere.vcxproj", "{425F0913-8B8E-4A51-A692-7E8565806CF7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori binari aritmetici", "StudentClass - Operator+\StudentClass - Operator+.vcxproj", "{CA660A1F-CEC8-4755-8F03-CDCD77076C44}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori binari aritmetici", "StudentClass - Operatori binari aritmetici\StudentClass - Operatori binari aritmetici.vcxproj", "{CA660A1F-CEC8-4755-8F03-CDCD77076C44}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori unari", "StudentClass - Operatori unari\StudentClass - Operatori unari.vcxproj", "{0587B7B1-3410-4B66-94FE-6BC669AD467A}"
 EndProject
