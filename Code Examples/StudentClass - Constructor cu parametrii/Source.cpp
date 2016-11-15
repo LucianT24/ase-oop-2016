@@ -17,6 +17,7 @@ public:
 		nrNote = 0;
 		note = NULL;
 	}
+	//constructor cu parametrii
 	Student(char* nume, int varsta, int nrNote, int*note)
 		:varsta(varsta), nrNote(nrNote)
 	{
@@ -31,6 +32,19 @@ public:
 		this->note = new int[nrNote];
 		for (int i = 0; i < nrNote; i++)
 			this->note[i] = note[i];
+	}
+	//alt constructor cu parametrii
+	Student(char* nume, int varsta)
+	{
+		cout << "Constructor cu parametrii" << endl;
+
+		this->nume = new char[strlen(nume) + 1];
+		strcpy(this->nume, nume);
+		this->varsta = varsta;
+
+		//atribute
+		this->nrNote = 0;
+		this->note = NULL;
 	}
 	//destructor
 	~Student()
