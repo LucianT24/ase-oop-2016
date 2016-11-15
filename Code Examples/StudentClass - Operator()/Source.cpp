@@ -172,10 +172,12 @@ public:
 #pragma endregion
 
 #pragma region Operator ()
-	//acces si modificare nota de la un index
-	int& operator[](int index)
+	//verifica incadrare varsta intre 2 valori
+	bool operator()(int varstaMinima, int varstaMaxima)
 	{
-		return this->note[index];
+		if (varstaMinima <= this->varsta && this->varsta < varstaMaxima)
+			return true;
+		return false;
 	}
 #pragma endregion
 
@@ -253,11 +255,10 @@ void main()
 	Student s("Nume", 21, 2, marks);
 	cout << s;
 
-	cout << "Afisare nota cu index 1 (nota 9)" << endl;
-	cout << s[1] << endl;;
+	cout << "s(20, 23)" << endl;
+	cout << s(20, 23) << endl; //operator()
 
-	cout << "Modificare nota cu index 1" << endl;
-	s[1] = 10;
-	cout << s;
+	cout << "s(40, 50)" << endl;
+	cout << s(40, 50) << endl; //operator()
 }
 
