@@ -1,3 +1,6 @@
+//Tema
+//1. Implementati operatorul () cu un singur parametru intreg pentru a returna un vector cu notele mai mici decat valoarea primita ca parametru
+
 #include <iostream>
 using namespace std;
 
