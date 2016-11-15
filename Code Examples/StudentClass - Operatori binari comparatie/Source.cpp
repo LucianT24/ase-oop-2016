@@ -1,3 +1,10 @@
+//Tema:
+//1. Implementati operatorii din exemplul de mai jos pentru a compara mediile a doi studenti
+//2. Implementati operatorii din exemplul de mai jos pentru a compara media unui student cu o valoare
+//3. Implementati operatorii din exemplul de mai jos pentru a compara un intreg cu media unui student 
+//4. Adugati un camp id constant, incrementat automat la declararea unui nou student. Implementati operatorii == si != pentru a compara doua obiecte de tip student pe baza id-ului
+
+
 #include <iostream>
 using namespace std;
 
@@ -207,7 +214,6 @@ bool operator==(int varsta, const Student& other)
 	/* do actual comparison */
 	return varsta == other.getVarsta();
 }
-//Tema: implementati supraincarcarea operatorilor >, <. >= , = 
 #pragma endregion
 
 

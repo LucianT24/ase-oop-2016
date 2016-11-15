@@ -1,3 +1,7 @@
+//Tema:
+//1. Implementati operatorul de cast la int care returneaza varsta studentului
+//2. Implementati operatorul de cast la char* care returneaza numele studentului
+
 #include <iostream>
 using namespace std;
 
