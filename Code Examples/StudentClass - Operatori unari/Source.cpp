@@ -198,7 +198,7 @@ public:
 	const Student operator++(int)
 	{
 		Student copie = *this; //constructor copiere
-		this->varsta++; // echivalent cu ++(*this);
+		this->varsta++; // echivalent cu ++(*this); care apeleaza forma prefixata a operatorului (implementata mai sus)
 		return copie;
 	}
 
