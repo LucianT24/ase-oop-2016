@@ -198,7 +198,7 @@ public:
 	const Student operator++(int)
 	{
 		Student copie = *this; //constructor copiere
-		++(*this);
+		this->varsta++; // echivalent cu ++(*this);
 		return copie;
 	}
 
@@ -290,7 +290,7 @@ istream & operator >> (istream & consola, Student & st)
 		cin >> note[i];
 	}
 	st.setNote(nrNote, note);
-
+	delete[]note;
 #pragma endregion
 
 	return consola;

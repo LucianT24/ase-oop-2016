@@ -152,7 +152,7 @@ istream & operator >> (istream & consola, Student & st)
 		cin >> note[i];
 	}
 	st.setNote(nrNote, note);
-
+	delete[]note;
 #pragma endregion
 
 	return consola;
