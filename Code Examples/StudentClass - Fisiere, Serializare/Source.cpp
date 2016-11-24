@@ -169,7 +169,11 @@ Student* citireDateFisierText(char* numeFisier, int& nr) {
 			int varsta;
 			fisier >> varsta;
 			char nume[200];
-			fisier >> nume;
+			//fisier >> nume; // se va opri la primul caracter de tip spatiu din nume
+			fisier.getline(nume, 200, '\n'); 
+			//\n is the default value.
+			//putem utiliza si alti delimitatori John|83|52.2
+			fisier.getline(nume, 200);
 			int nrNote;
 			fisier >> nrNote;
 			int* note = new int[nrNote];
@@ -186,7 +190,7 @@ Student* citireDateFisierText(char* numeFisier, int& nr) {
 		fisier.close();
 	}
 	else
-		cout << "Probleme deschidere fisier";
+		cout << "Fisierul nu a putut fi deschis";
 
 	return studenti;
 }
@@ -195,7 +199,7 @@ void scrieFisierText(char* numeRaport, Student* studenti, int nr) {
 	ofstream fisier;
 	fisier.open(numeRaport, ofstream::out | ofstream::trunc);
 	if (!fisier.is_open()) {
-		cout << endl << "Generare raport esuata !";
+		cout << endl << "Raportul nu a putut fi generat";
 	}
 	else
 	{
