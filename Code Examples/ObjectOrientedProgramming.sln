@@ -43,7 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori unari", "Operator
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori InputOutput", "Operatori InputOutput", "{DDA819C3-1154-4F92-8316-3EFBA1B3289B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Clase - Mostenire", "05. Clase - Mostenire", "{28DC455B-AFFF-494A-941D-C3468BD09F38}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Clase - Mostenire", "06. Clase - Mostenire", "{28DC455B-AFFF-494A-941D-C3468BD09F38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Operatori binari", "Operatori binari", "{083F75B0-0DB3-4B3B-B775-725A6B47FE3D}"
 EndProject
@@ -62,6 +62,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori InputOutput (Metode de acces)", "StudentClass - Operatori InputOutput (Metode de acces)\StudentClass - InputOutput Operators (Metode de acces).vcxproj", "{7B50ADF4-FB78-408F-B0D8-5FB741210B9B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Operatori InputOutput (Friend)", "StudentClass - Operatori InputOutput (Metode friend)\StudentClass - InputOutput Operators (Metode friend).vcxproj", "{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Clase - Fisiere, Serializare", "05. Clase - Fisiere, Serializare", "{8C4FC58B-B4A5-48DB-AFC5-8149B5130F96}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StudentClass - Fisiere, Serializare", "StudentClass - Fisiere, Serializare\StudentClass - Fisiere, Serializare.vcxproj", "{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PersonClass - Inheritance", "PersonClass - Inheritance\PersonClass - Inheritance.vcxproj", "{9997B473-7182-4D0F-9B58-AAFD4AB216C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +229,22 @@ Global
 		{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}.Release|x64.Build.0 = Release|x64
 		{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}.Release|x86.ActiveCfg = Release|Win32
 		{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891}.Release|x86.Build.0 = Release|Win32
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Debug|x64.ActiveCfg = Debug|x64
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Debug|x64.Build.0 = Debug|x64
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Debug|x86.ActiveCfg = Debug|Win32
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Debug|x86.Build.0 = Debug|Win32
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Release|x64.ActiveCfg = Release|x64
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Release|x64.Build.0 = Release|x64
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Release|x86.ActiveCfg = Release|Win32
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49}.Release|x86.Build.0 = Release|Win32
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Debug|x64.ActiveCfg = Debug|x64
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Debug|x64.Build.0 = Debug|x64
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Debug|x86.ActiveCfg = Debug|Win32
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Debug|x86.Build.0 = Debug|Win32
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Release|x64.ActiveCfg = Release|x64
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Release|x64.Build.0 = Release|x64
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Release|x86.ActiveCfg = Release|Win32
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -253,5 +275,7 @@ Global
 		{C4DDA8FB-F31C-4781-99D5-6A8BD2372B88} = {9877C4C9-826F-4DD0-A91B-C318007E1BCC}
 		{7B50ADF4-FB78-408F-B0D8-5FB741210B9B} = {DDA819C3-1154-4F92-8316-3EFBA1B3289B}
 		{BAF5EAC6-7DA4-4B4A-93E1-CD9EFDABA891} = {DDA819C3-1154-4F92-8316-3EFBA1B3289B}
+		{9B7E47F6-854F-4F9F-801B-18A9A2C3CC49} = {8C4FC58B-B4A5-48DB-AFC5-8149B5130F96}
+		{9997B473-7182-4D0F-9B58-AAFD4AB216C4} = {28DC455B-AFFF-494A-941D-C3468BD09F38}
 	EndGlobalSection
 EndGlobal

@@ -57,6 +57,7 @@ public:
 			delete[] note;
 	}
 
+#pragma region Metode acces
 	//Get/Set Varsta
 	int getVarsta()
 	{
@@ -97,12 +98,15 @@ public:
 	}
 	void setNote(int nrNote, int*note)
 	{
+		this->nrNote = nrNote;
+
 		if (this->note != NULL)
 			delete[] this->note;
 		this->note = new int[nrNote];
 		for (int i = 0; i < nrNote; i++)
 			this->note[i] = note[i];
 	}
+#pragma endregion 
 };
 
 void main()

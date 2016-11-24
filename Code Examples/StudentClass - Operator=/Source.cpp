@@ -86,6 +86,8 @@ public:
 	}
 	void setNote(int nrNote, int*note)
 	{
+		this->nrNote = nrNote;
+
 		if (this->note != NULL)
 			delete[] this->note;
 		this->note = new int[nrNote];
