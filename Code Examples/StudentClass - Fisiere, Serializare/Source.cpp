@@ -154,8 +154,10 @@ ostream & operator<<(ostream & consola, const Student & st)
 }
 
 Student* citireDateFisierText(char* numeFisier, int& nr) {
+	
 	Student* studenti = NULL;
 	nr = 0;
+
 	ifstream fisier;
 	fisier.open(numeFisier, ifstream::in);
 	if (fisier.is_open()) {
@@ -277,6 +279,7 @@ void citireDateFisierBinar(char* numeFisier, Student*& studenti, int& nrStudenti
 			int* note = new int[nrNote];
 			for (int j = 0; j < nrNote; j++)
 				fisier.read((char*)&note[j], sizeof(int));
+			
 			Student temp(nume, varsta, nrNote, note);
 			studenti[i] = temp;
 
