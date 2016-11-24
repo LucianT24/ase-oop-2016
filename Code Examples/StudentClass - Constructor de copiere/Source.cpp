@@ -57,6 +57,8 @@ public:
 		else
 		{
 			this->note = new int[this->nrNote];
+
+			//memcpy(this->note, source.note, this->nrNote * sizeof(int));
 			for (int i = 0; i < this->nrNote; i++)
 				this->note[i] = source.note[i];
 		}
@@ -113,6 +115,8 @@ public:
 	}
 	void setNote(int nrNote, int*note)
 	{
+		this->nrNote = nrNote;
+
 		if (this->note != NULL)
 			delete[] this->note;
 		this->note = new int[nrNote];
