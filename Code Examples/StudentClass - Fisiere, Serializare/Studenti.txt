@@ -1,13 +1,13 @@
 3
 21
-Ioana
+Student1
 2
 8
 8
 21
-Popescu
+Student2
 1
 7
 21
-Ion
+Student3
 0

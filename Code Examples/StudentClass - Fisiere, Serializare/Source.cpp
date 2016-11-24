@@ -153,7 +153,7 @@ ostream & operator<<(ostream & consola, const Student & st)
 	return consola;
 }
 
-Student* citesteDateFisierText(char* numeFisier, int& nr) {
+Student* citireDateFisierText(char* numeFisier, int& nr) {
 	Student* studenti = NULL;
 	nr = 0;
 	ifstream fisier;
@@ -288,7 +288,7 @@ void citireDateFisierBinar(char* numeFisier, Student*& studenti, int& nrStudenti
 
 void main() {
 	int nrStudenti = 0;
-	Student *studenti = citesteDateFisierText("Studenti.txt", nrStudenti);
+	Student *studenti = citireDateFisierText("Studenti.txt", nrStudenti);
 	//Student *studenti;
 	
 	for (int i = 0; i < nrStudenti; i++)
